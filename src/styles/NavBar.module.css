@@ -1,0 +1,65 @@
+.navbar {
+    margin: auto;
+    margin-top: 10px; /* Keeps the initial spacing */
+    width: 90%;
+    padding: 12px 20px; /* Adds spacing */
+    border-radius: 50px;
+    position: sticky;
+    top: 10px; /* Ensures it stays 10px from the top even when scrolling */
+    z-index: 1000;
+    backdrop-filter: blur(15px); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background: rgba(228, 228, 228, 0.8);
+        box-shadow: 0 4px 12px rgb(248, 230, 230);
+    }
+}
+
+/* Links inside the navbar */
+.navbar a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    color: #6d28d9; /* Soft purple glow */
+}
+
+/* Button inside navbar */
+.navbar .nav-button {
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .nav-button:hover {
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    transform: scale(1.05);
+}
+
+/* Add a slight shrink effect on scroll */
+.scroll-shrink {
+    margin-top: 5px;
+    width: 85%;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+}

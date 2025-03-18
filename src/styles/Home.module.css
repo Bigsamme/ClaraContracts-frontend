@@ -1,0 +1,40 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .animatedCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
+  .heroContent {
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  .heroText {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .heroSubText {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
